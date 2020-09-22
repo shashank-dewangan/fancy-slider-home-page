@@ -1,0 +1,159 @@
+body {
+    margin     : 0;
+    padding    : 0;
+    font-family: sans-serif;
+    position   : relative;
+}
+
+.container {
+    height             : 100vh;
+    width              : 100%;
+    background-image   : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/background1.jpg');
+    background-position: center;
+    background-size    : cover;
+}
+
+.logo {
+    width  : 30px;
+    padding: 0px 5px;
+    cursor : pointer;
+}
+
+.navbar {
+    top        : 30px;
+    height     : 60px;
+    width      : 100%;
+    background : rgba(0, 0, 0, 0.4);
+    position   : absolute;
+    box-sizing : border-box;
+    display    : flex;
+    align-items: center;
+    padding    : 0px 50px;
+}
+
+nav {
+    flex   : 1;
+    display: flex;
+}
+
+nav ul li {
+    list-style : none;
+    display    : inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    color          : white;
+    text-decoration: none;
+}
+
+.sidemenu {
+    width     : 150px;
+    height    : 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    padding   : 0px 60px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    width   : 15px;
+    margin  : 120px auto;
+    display : block;
+    position: absolute;
+    cursor  : pointer;
+}
+
+.social-icons {
+    width     : 20px;
+    display   : block;
+    margin    : 250px auto;
+    position  : absolute;
+    text-align: center;
+}
+
+.social-icons img {
+    height       : 15px;
+    margin-bottom: 30px;
+    cursor       : pointer;
+}
+
+.info-icon {
+    height  : 15px;
+    position: absolute;
+    bottom  : 30px;
+    cursor  : pointer;
+}
+
+.content {
+    width    : 600px;
+    height   : 350px;
+    position : absolute;
+    left     : 15%;
+    top      : 50%;
+    transform: translateY(-50%);
+    overflow : hidden;
+}
+
+#slider {
+    display   : inline-flex;
+    transition: 0.5s;
+}
+
+.msg-col {
+    width: 600px;
+    color: white;
+}
+
+.msg-col h1 {
+    font-size: 50px;
+}
+
+
+.msg-col p {
+    color      : #ddd;
+    line-height: 25px;
+    padding    : 10px 0px;
+}
+
+.msg-col a {
+    text-decoration: none;
+    color          : #555;
+    background     : #fff;
+    padding        : 10px 20px;
+    margin-top     : 30px;
+    font-size      : 15px;
+    border-radius  : 30px;
+}
+
+.controller {
+    height    : 400px;
+    position  : absolute;
+    right     : 100px;
+    top       : 50%;
+    width     : 1px;
+    background: white;
+    transform : translateY(-50%);
+    cursor    : pointer;
+    transition: 0.5s;
+}
+
+#line1,
+#line2,
+#line3,
+#line4 {
+    height   : 100px;
+    width    : 10px;
+    cursor   : pointer;
+    transform: translateX(-50%);
+}
+
+#active {
+    width        : 5px;
+    height       : 100px;
+    background   : white;
+    top          : 0;
+    position     : absolute;
+    transform    : translateX(-50%);
+    border-radius: 20px;
+    transition   : 0.5s;
+}

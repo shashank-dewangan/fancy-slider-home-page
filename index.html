@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Abount</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidemenu">
+            <img src="images/search.png" class="search-icon">
+            <div class="social-icons">
+                <img src="images/fb.png">
+                <img src="images/ig.png">
+                <img src="images/pt.png">
+                <img src="images/tw.png">
+            </div>
+            <img src="images/info.png" class="info-icon">
+        </div>
+        <div class="content">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>Title 1</h1>
+                    <p>Video provides a powerful way to help you prove your point.
+                        When you click Online Video, you can paste in the embed code for the video you want to add.
+                        You can also type a keyword to search online for the video that best fits your document.
+                        To make your document look professionally produced, Word provides header, footer, cover page,
+                        and text box designs that complement each other.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Title 2</h1>
+                    <p>Video provides a powerful way to help you prove your point.
+                        When you click Online Video, you can paste in the embed code for the video you want to add.
+                        You can also type a keyword to search online for the video that best fits your document.
+                        To make your document look professionally produced, Word provides header, footer, cover page,
+                        and text box designs that complement each other.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Title 3</h1>
+                    <p>Video provides a powerful way to help you prove your point.
+                        When you click Online Video, you can paste in the embed code for the video you want to add.
+                        You can also type a keyword to search online for the video that best fits your document.
+                        To make your document look professionally produced, Word provides header, footer, cover page,
+                        and text box designs that complement each other.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Title 4</h1>
+                    <p>Video provides a powerful way to help you prove your point.
+                        When you click Online Video, you can paste in the embed code for the video you want to add.
+                        You can also type a keyword to search online for the video that best fits your document.
+                        To make your document look professionally produced, Word provides header, footer, cover page,
+                        and text box designs that complement each other.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="controller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    </div>
+    <script>
+        var slider = document.getElementById('slider')
+
+        var action = document.getElementById('active')
+        var line1 = document.getElementById('line1')
+        var line2 = document.getElementById('line2')
+        var line3 = document.getElementById('line3')
+        var line4 = document.getElementById('line4')
+
+        line1.onclick = function () {
+            slider.style.transform = 'translateX(0)'
+            action.style.top = '0px'
+        }
+        line2.onclick = function () {
+            slider.style.transform = 'translateX(-25%)'
+            action.style.top = '100px'
+        }
+        line3.onclick = function () {
+            slider.style.transform = 'translateX(-50%)'
+            action.style.top = '200px'
+        }
+        line4.onclick = function () {
+            slider.style.transform = 'translateX(-75%)'
+            action.style.top = '300px'
+        }
+    </script>
+</body>
+
+</html>
